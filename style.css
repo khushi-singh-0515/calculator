@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#nisha {
+    width: 22vw;
+    background-color: rgba(39, 36, 36, 0.71);
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    align-content: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+#raju {
+    background-color: rgb(222, 232, 234);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 20vw;
+
+    border-radius: 7px;
+    display: grid;
+    justify-content: end;
+    font-weight: bolder;
+    align-items: center;
+    padding: 4%;
+}
+
+.khushi {
+    font-size: xx-large;
+    background-color: beige;
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 6px;
+    display: grid;
+    grid-row: 20px;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+#ruhi {
+    background-color: rgba(255, 153, 0, 0.796);
+}
