@@ -11,23 +11,109 @@
 <body>
     <div id="nisha">
         <div id="raju" class="khushi">0</div>
-        <div class="khushi">7</div>
-        <div class="khushi">8</div>
-        <div class="khushi">9</div>
-        <div class="khushi">/</div>
-        <div class="khushi">4</div>
-        <div class="khushi">5</div>
-        <div class="khushi">6</div>
-        <div class="khushi">*</div>
-        <div class="khushi">1</div>
-        <div class="khushi">2</div>
-        <div class="khushi">4</div>
-        <div class="khushi">-</div>
-        <div class="khushi">0</div>
-        <div class="khushi">.</div>
-        <div class="khushi">+</div>
+        <div class="khushi" id="Seven">7</div>
+        <div class="khushi" id='eight'>8</div>
+        <div class="khushi" id='nine'>9</div>
+        <div class="khushi" id='slash'>/</div>
+        <div class="khushi" id='four'>4</div>
+        <div class="khushi" id='five'>5</div>
+        <div class="khushi" id='six'>6</div>
+        <div class="khushi" id='star'>*</div>
+        <div class="khushi" id='one'>1</div>
+        <div class="khushi" id='two'>2</div>
+        <div class="khushi" id="three">3</div>
+        <div class="khushi" id="minus">-</div>
+        <div class="khushi" id="zero">0</div>
+        <div class="khushi" id="clear">AC</div>
+        <div class="khushi" id="add">+</div>
         <div class="khushi" id="ruhi">=</div>
     </div>
 </body>
+<script>
+    let Equ = "";
+    let input = document.getElementById('raju')
+    let seven = document.getElementById('Seven')
+    let result = document.getElementById('ruhi')
+    let add = document.getElementById('add')
+    let clear = document.getElementById('clear')
+    let eight = document.getElementById('eight')
+    let nine = document.getElementById('nine')
+    let slash = document.getElementById('slash')
+    let four = document.getElementById('four')
+    let five = document.getElementById('five')
+    let six = document.getElementById('six')
+    let star = document.getElementById('star')
+    let one = document.getElementById('one')
+    let two = document.getElementById('two')
+    let three = document.getElementById('three')
+    let minus = document.getElementById('minus')
+    let zero = document.getElementById('zero')
+    
+    seven.addEventListener('click',()=>{
+        Equ = Equ+'7'
+        input.innerText = Equ;
+    })
+    one.addEventListener('click',()=>{
+        Equ = Equ+'1'
+        input.innerText = Equ;
+    })
+    two.addEventListener('click',()=>{
+        Equ = Equ+'2'
+        input.innerText = Equ;
+    })
+    three.addEventListener('click',()=>{
+        Equ = Equ+'3'
+        input.innerText = Equ;
+    })
+    minus.addEventListener('click',()=>{
+        Equ = Equ+'-'
+        input.innerText = Equ;
+    })
+    zero.addEventListener('click',()=>{
+        Equ = Equ+'0'
+        input.innerText = Equ;
+    })
+    four.addEventListener('click',()=>{
+        Equ = Equ+'4'
+        input.innerText = Equ;
+    })
+    five.addEventListener('click',()=>{
+        Equ = Equ+'5'
+        input.innerText = Equ;
+    })
+    six.addEventListener('click',()=>{
+        Equ = Equ+'6'
+        input.innerText = Equ;
+    })
+    star.addEventListener('click',()=>{
+        Equ = Equ+'*'
+        input.innerText = Equ;
+    })
+    
+    nine.addEventListener('click',()=>{
+        Equ = Equ+'9'
+        input.innerText = Equ;
+    })
+    eight.addEventListener('click',()=>{
+        Equ = Equ+'8'
+        input.innerText = Equ;
+    })
+    add.addEventListener('click',()=>{
+        Equ = Equ+'+'
+        input.innerText = Equ;
+    })
+    slash.addEventListener('click',()=>{
+        Equ = Equ+'/'
+        input.innerText = Equ;
+    })
+    result.addEventListener('click',()=>{
+        input.innerText = eval(Equ);
+        Equ = '';
+    })
+    clear.addEventListener('click',()=>{
+        Equ = ''
+        input.innerText = Equ;
+    })
+</script>
 
 </html>
